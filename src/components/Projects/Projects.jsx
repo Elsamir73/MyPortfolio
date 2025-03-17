@@ -5,29 +5,39 @@ import projectImg from "../../assets/projects/projects.png";
 
 const Projects = () => {
   return (
-    <section className={styles.container}>
-      <h2>Projects</h2>
-      <div>
+    <section className={styles.container} id="projects">
+      <h2 className={styles.h2}>Projects</h2>
+      <div className={styles.projects}>
         {projects.map((project, id) => (
-          <div key={id}>
-            <img src={projectImg} alt={`Image of ${project.title}`} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+          <div key={id} className={styles["project-card"]}>
+            <div className={styles.image}>
+              <img src={projectImg} alt={`Image of ${project.title}`} />
+            </div>
+            <h3 className={styles.title}>{project.title}</h3>
+            <p className={styles.description}>{project.description}</p>
 
-            <ul>
+            <ul className={styles.skills}>
               {project.skills.map((skill, skillId) => (
-                <li key={skillId}>{skill}</li>
+                <li key={skillId} className={styles.skill}>
+                  {skill}
+                </li>
               ))}
             </ul>
 
-            <div>
-              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+            <div className={styles.links}>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
                 Demo
               </a>
               <a
                 href={project.source}
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.link}
               >
                 Source
               </a>
