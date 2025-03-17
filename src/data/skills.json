@@ -1,0 +1,14 @@
+[
+  {
+    "name": "HTML",
+    "imageSrc": "html.png"
+  },
+  {
+    "name": "CSS",
+    "imageSrc": "css.png"
+  },
+  {
+    "name": "React",
+    "imageSrc": "react.png"
+  }
+]
