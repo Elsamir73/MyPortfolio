@@ -2,14 +2,14 @@
   {
     "title": "Project A",
     "imageSrc": "projects/projects.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "description": "Yaknyati is a dynamic web project built using PHP, Laravel, and JavaScript, where I contributed as a key team member in its development.",
+    "skills": ["PHP", "Laravel", "JS"],
+    "Live": "https://yak.techkarmi.com/",
     "source": "https://www.github.com"
   },
   {
     "title": "Project B",
-    "imageSrc": "projects/projects.png",
+    "imageSrc": "projects/plasma.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node", "Sass"],
     "demo": "https://www.example.com",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Project C",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/plasma.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
     "demo": "https://www.example.com",

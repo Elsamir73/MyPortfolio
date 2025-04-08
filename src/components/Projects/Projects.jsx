@@ -1,7 +1,7 @@
 import React from "react";
 import projects from "../../data/projects.json";
 import styles from "./Projects.module.css";
-import projectImg from "../../assets/projects/projects.png";
+import projectImg from "../../assets/projects/yaknyati.png";
 
 const Projects = () => {
   return (
@@ -26,12 +26,12 @@ const Projects = () => {
 
             <div className={styles.links}>
               <a
-                href={project.demo}
+                href={project.Live}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                Demo
+                Live
               </a>
               <a
                 href={project.source}
