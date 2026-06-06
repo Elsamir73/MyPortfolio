@@ -37,6 +37,12 @@
   margin-bottom: 52px;
 }
 
+.ctaRow {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);

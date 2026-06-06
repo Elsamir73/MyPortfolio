@@ -12,9 +12,14 @@ const Hero = () => {
           I am a frontend developer with 6 months of internship using laravel
           and react. Reach Out if you like to learn more!
         </p>
-        <a href="mailto:shuzhal777@gmail.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
+        <div className={styles.ctaRow}>
+          <a href="mailto:shuzhal777@gmail.com" className={styles.contactBtn}>
+            Contact Me
+          </a>
+          <a href="/SAMIR_PATHAK_CV.pdf" download className={styles.contactBtn}>
+            Download My CV
+          </a>
+        </div>
       </div>
       <img src={image1} alt="Hero image of me" className={styles.heroImg} />
       <div className={styles.topBlur} />
