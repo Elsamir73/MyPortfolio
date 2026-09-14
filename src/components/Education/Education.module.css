@@ -1,0 +1,39 @@
+.list {
+  display: grid;
+  gap: 1rem;
+}
+
+.item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+.itemPlaceholder {
+  border-style: dashed;
+  background: var(--bg-soft);
+}
+
+.item h3 {
+  font-size: 1.0625rem;
+  margin-bottom: 0.2rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.note {
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.note code {
+  font-family: inherit;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.05rem 0.3rem;
+}

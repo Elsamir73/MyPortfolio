@@ -1,14 +1,15 @@
 [
   {
-    "name": "HTML",
-    "imageSrc": "html.png"
+    "group": "Frontend",
+    "items": ["HTML", "CSS", "JavaScript", "React"]
   },
   {
-    "name": "CSS",
-    "imageSrc": "css.png"
+    "group": "Backend",
+    "items": ["PHP", "MySQL", "WordPress", "Laravel", "Apache"]
   },
   {
-    "name": "React",
-    "imageSrc": "react.png"
+    "group": "Tools",
+    "items": ["Git", "GitHub", "VS Code"]
   }
 ]
+

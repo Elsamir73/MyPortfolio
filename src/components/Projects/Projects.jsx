@@ -1,52 +1,53 @@
-import React from "react";
 import projects from "../../data/projects.json";
 import styles from "./Projects.module.css";
-import projectImg from "../../assets/projects/yaknyati.png";
 
 const Projects = () => {
   return (
-    <section className={styles.container} id="projects">
-      <h2 className={styles.h2}>Projects</h2>
-      <div className={styles.projects}>
-        {projects.map((project, id) => (
-          <div key={id} className={styles["project-card"]}>
-            <div className={styles.image}>
-              <img src={projectImg} alt={`Image of ${project.title}`} />
-            </div>
-            <h3 className={styles.title}>{project.title}</h3>
-            <p className={styles.description}>{project.description}</p>
-
-            <ul className={styles.skills}>
-              {project.skills.map((skill, skillId) => (
-                <li key={skillId} className={styles.skill}>
-                  {skill}
-                </li>
-              ))}
-            </ul>
-
-            <div className={styles.links}>
-              <a
-                href={project.Live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Live
-              </a>
-              <a
-                href={project.source}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Source
-              </a>
-            </div>
-          </div>
-        ))}
+    <section id="projects" className="section">
+      <div className="container">
+        <p className="kicker">Projects</p>
+        <h2 className="section-title">Things I&rsquo;ve built.</h2>
+        <div className={styles.grid}>
+          {projects.map((project) => (
+            <article key={project.title} className={styles.card}>
+              <h3 className={styles.cardTitle}>{project.title}</h3>
+              <p className={styles.description}>{project.description}</p>
+              <ul className={styles.tags} aria-label="Technologies used">
+                {project.skills.map((skill) => (
+                  <li key={skill} className="tag">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+              <div className={styles.links}>
+                {project.live && (
+                  <a
+                    className={styles.link}
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live site <span aria-hidden="true">&nearr;</span>
+                  </a>
+                )}
+                {project.source && (
+                  <a
+                    className={styles.link}
+                    href={project.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source <span aria-hidden="true">&nearr;</span>
+                  </a>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default Projects;
+

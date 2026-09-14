@@ -1,9 +1,19 @@
 [
   {
-    "role": "Frontend Developer",
+    "role": "Website Operator",
+    "organisation": "I.O.E Thangka",
+    "startDate": "Jun 2025",
+    "endDate": "Oct 2025",
+    "summary": "I looked after the website day to day: planning work around clear goals, managing product uploads and content updates, and keeping pages accurate and SEO friendly. When bugs or issues showed up, I tracked them down and worked with developers and designers to fix them. I also helped new team members settle in and find their rhythm.",
+    "technologies": []
+  },
+  {
+    "role": "Intern - PHP Developer",
     "organisation": "EEE Innovation Ghar",
-    "startDate": "Sept, 2024",
-    "endDate": "Present",
-    "experiences": ["Worked on Laravel", "Reduced load times by 50%"]
+    "startDate": "Nov 2024",
+    "endDate": "Apr 2025",
+    "summary": "My first step into professional development. I built features for PHP web projects, worked with MySQL databases, and developed custom WordPress themes and plugins for client sites. Most of my front-end work was with HTML, CSS and JavaScript, and I also got to contribute to a React.js project.",
+    "technologies": ["PHP", "MySQL", "WordPress", "HTML", "CSS", "JavaScript", "React"]
   }
 ]
+

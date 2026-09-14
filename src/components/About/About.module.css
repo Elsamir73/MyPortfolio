@@ -1,92 +1,49 @@
-@import "../../vars.css";
-
-.container {
-  position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
+.grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
   align-items: start;
 }
 
-.aboutImage {
-  width: 35%;
+.text p {
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+  max-width: 62ch;
 }
 
-.aboutItems {
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+.text p:last-child {
+  margin-bottom: 0;
 }
 
-.aboutItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
+.facts {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  padding: 1.25rem 1.5rem;
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
+.fact + .fact {
+  margin-top: 1.1rem;
 }
 
-.aboutItem h3 {
-  font-size: 25px;
+.facts dt {
+  font-size: 0.75rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
 }
 
-.aboutItem p {
-  font-size: 25px;
+.facts dd {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin-top: 0.15rem;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
-  .aboutItems {
-    margin-top: 29px;
-  }
-
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
+

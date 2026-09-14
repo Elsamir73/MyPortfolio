@@ -1,26 +1,10 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/projects.png",
-    "description": "Yaknyati is a dynamic web project built using PHP, Laravel, and JavaScript, where I contributed as a key team member in its development.",
-    "skills": ["PHP", "Laravel", "JS"],
-    "Live": "https://yak.techkarmi.com/",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project B",
-    "imageSrc": "projects/plasma.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/plasma.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Yaknyati",
+    "description": "A dynamic web project built with PHP, Laravel and JavaScript. I contributed to its development as a key team member.",
+    "skills": ["PHP", "Laravel", "JavaScript"],
+    "live": "https://yak.techkarmi.com/",
+    "source": "https://github.com/Elsamir73"
   }
 ]
+
