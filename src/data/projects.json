@@ -1,10 +1,40 @@
 [
   {
+    "title": "Plasma",
+    "description": "A consultancy website built with PHP, Bootstrap and MySQL.",
+    "skills": ["PHP", "Bootstrap", "MySQL"],
+    "live": "https://www.plasmaedu.com/"
+  },
+  {
+    "title": "Bitenest",
+    "description": "A SaaS platform for restaurants and their users, built with PHP and JavaScript.",
+    "skills": ["PHP", "JavaScript", "SaaS"],
+    "image": "bitenest.jpg"
+  },
+  {
+    "title": "Spam Detection System",
+    "description": "A spam detection system built with Python and AI, applying machine learning to filter out unwanted messages.",
+    "skills": ["Python", "AI", "Machine Learning"],
+    "image": "spam-detection.jpg"
+  },
+  {
+    "title": "RetroKits",
+    "description": "An ecommerce website built with WordPress, from product setup to a complete shopping experience.",
+    "skills": ["WordPress", "Ecommerce"],
+    "image": "retrokits.jpg"
+  },
+  {
     "title": "Yaknyati",
     "description": "A dynamic web project built with PHP, Laravel and JavaScript. I contributed to its development as a key team member.",
     "skills": ["PHP", "Laravel", "JavaScript"],
     "live": "https://yak.techkarmi.com/",
     "source": "https://github.com/Elsamir73"
+  },
+  {
+    "title": "ShuzhFit",
+    "description": "A fitness tracking project built with Python.",
+    "skills": ["Python"],
+    "image": "shuzhfit.jpg"
   }
 ]
 

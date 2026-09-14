@@ -12,6 +12,20 @@
   border-radius: var(--radius);
   padding: 1.5rem;
   transition: border-color 0.2s ease;
+  overflow: hidden;
+}
+
+.imageWrap {
+  margin: -1.5rem -1.5rem 0.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
 }
 
 .card:hover {
