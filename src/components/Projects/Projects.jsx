@@ -32,7 +32,7 @@ const LiveCard = ({ project }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit live site <span aria-hidden="true">&nearr;</span>
+          Visit live site <span aria-hidden="true">↗</span>
         </a>
       )}
       {project.source && (
@@ -42,7 +42,7 @@ const LiveCard = ({ project }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Source <span aria-hidden="true">&nearr;</span>
+          Source <span aria-hidden="true">↗</span>
         </a>
       )}
     </div>
@@ -84,7 +84,7 @@ const PersonalCard = ({ project }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Live site <span aria-hidden="true">&nearr;</span>
+            Live site <span aria-hidden="true">↗</span>
           </a>
         )}
         {project.source && (
@@ -94,7 +94,7 @@ const PersonalCard = ({ project }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Source <span aria-hidden="true">&nearr;</span>
+            Source <span aria-hidden="true">↗</span>
           </a>
         )}
       </div>
