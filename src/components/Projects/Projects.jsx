@@ -8,7 +8,48 @@ const images = import.meta.glob(
   { eager: true, import: "default" }
 );
 
-const ProjectCard = ({ project }) => {
+const LiveCard = ({ project }) => (
+  <article className={styles.liveCard}>
+    <div className={styles.liveBody}>
+      <div className={styles.liveHead}>
+        <h4 className={styles.liveTitle}>{project.title}</h4>
+        <span className={styles.badge}>Live</span>
+      </div>
+      <p className={styles.description}>{project.description}</p>
+      <ul className={styles.tags} aria-label="Technologies used">
+        {project.skills.map((skill) => (
+          <li key={skill} className="tag">
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div className={styles.liveActions}>
+      {project.live && (
+        <a
+          className={styles.button}
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit live site <span aria-hidden="true">&nearr;</span>
+        </a>
+      )}
+      {project.source && (
+        <a
+          className={styles.link}
+          href={project.source}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source <span aria-hidden="true">&nearr;</span>
+        </a>
+      )}
+    </div>
+  </article>
+);
+
+const PersonalCard = ({ project }) => {
   const image = project.image
     ? images[`../../assets/projects/${project.image}`]
     : undefined;
@@ -61,13 +102,18 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-const ProjectGroup = ({ label, items }) => (
+const ProjectGroup = ({ label, hint, variant = "personal", items }) => (
   <div className={styles.group}>
     <h3 className={styles.groupTitle}>{label}</h3>
-    <div className={styles.grid}>
-      {items.map((project) => (
-        <ProjectCard key={project.title} project={project} />
-      ))}
+    {hint && <p className={styles.groupHint}>{hint}</p>}
+    <div className={variant === "live" ? styles.liveGrid : styles.grid}>
+      {items.map((project) =>
+        variant === "live" ? (
+          <LiveCard key={project.title} project={project} />
+        ) : (
+          <PersonalCard key={project.title} project={project} />
+        )
+      )}
     </div>
   </div>
 );
@@ -82,10 +128,13 @@ const Projects = () => {
         <h2 className="section-title">Things I&rsquo;ve built.</h2>
         <ProjectGroup
           label="Live in production"
+          hint="Real websites, deployed and running right now."
+          variant="live"
           items={live}
         />
         <ProjectGroup
           label="Personal projects"
+          hint="Projects I built myself to learn and experiment."
           items={personal}
         />
       </div>
