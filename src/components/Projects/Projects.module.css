@@ -1,7 +1,26 @@
+.group + .group {
+  margin-top: 3rem;
+}
+
+.groupTitle {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-bottom: 1.25rem;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
+}
+
+@media (max-width: 759px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
